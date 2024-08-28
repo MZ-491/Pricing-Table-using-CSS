@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table using CSS</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 200px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        button{
+            background-color: orange ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        span{
+            background-color: green;
+        }
+        h2{
+            font-size: 40px;
+        }
+        h1{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .basic{
+            border: 2px solid whitesmoke;
+            background-color: aliceblue;
+            width: 420px;
+           text-align: center;
+           padding-bottom: 20px;
+           max-width: 400px;
+           border-radius: 10px;
+        }
+        .Standard{
+            border: 2px solid whitesmoke;
+            background-color: aliceblue;
+            width: 420px;
+            text-align: center;
+            padding-bottom: 20px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .premium{
+            border: 2px solid whitesmoke;
+            background-color: aliceblue;
+            width: 420px;
+            text-align: center;
+            padding-bottom: 20px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+       @media(max-width: 1250px){
+        .container{
+            flex-direction: column;
+            height: 100%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="basic">
+            <h1><strong>Basic</strong></h1>
+            <h2>$11.99/month</h2>
+            <p><span>&#10003;</span> 1GB Storage</p>
+            <p><span>&#10003;</span> 1 user</p>
+            <p>🚫 Support</p>
+            <button >sign Up</button>
+        </div>
+        <div class="Standard">
+            <h1>Standard</h1>
+            <h2>$19.99/month</h2>
+            <p><span>&#10003;</span> 50GB Storage</p>
+            <p><span>&#10003;</span> 5 users</p>
+            <p><span>&#10003;</span> Phone and Email Support</p>
+            <button >sign Up</button>
+        </div>
+        <div class="premium">
+            <h1>Premium</h1>
+            <h2>$49.99/month</h2>
+            <p><span>&#10003;</span> 100GB Storage</p>
+            <p><span>&#10003;</span> 10 user</p>
+            <p><span>&#10003;</span> 24/7 Support</p>
+            <button >sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
